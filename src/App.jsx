@@ -2071,7 +2071,7 @@ function updateChemistryFor(side, squad, won) {
         .ldm-container { width: 100%; max-width: 720px; }
         .ldm-header { margin-bottom: 24px; margin-top: 8px; }
         .ldm-header-row { display: flex; align-items: center; gap: 8px; }
-        .ldm-icon-box { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 12px; background: rgba(251,191,36,0.14); flex-shrink: 0; }
+        .ldm-icon-box { display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; flex-shrink: 0; }
         .ldm-title { font-family: 'Rajdhani', sans-serif; font-size: 30px; font-weight: 700; letter-spacing: 0.02em; color: #FFFFFF; margin: 0; }
         .ldm-subtitle-row { display: flex; align-items: center; gap: 8px; margin-top: 8px; margin-left: 4px; }
         .ldm-subtitle-bar { height: 4px; width: 40px; border-radius: 999px; background: #22D3EE; }
@@ -2183,7 +2183,7 @@ function updateChemistryFor(side, squad, won) {
         <header className="ldm-header">
           <div className="ldm-header-row">
             <div className="ldm-icon-box">
-              <img src={LOGO_DATA_URI} alt="Logo" style={{ width: "28px", height: "28px", objectFit: "contain" }} />
+              <img src={LOGO_DATA_URI} alt="Logo" style={{ width: "56px", height: "56px", objectFit: "contain" }} />
             </div>
             <h1 className="ldm-title">ML DRAFTLINE</h1>
           </div>
