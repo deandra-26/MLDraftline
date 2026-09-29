@@ -31,8 +31,8 @@ const ALL_TIME_LEGENDS = {
   ],
   "Exp Laner": [
     ["Antimage", 92], ["REKT", 80], ["Butss", 91], ["Lutpiii", 90], ["Rimitchi", 79],["Veldora", 78], ["Rezz", 75], ["Luke", 82], ["G", 79], ["R7", 95], ["Super Dann", 70],
-    ["Nino", 84], ["Shogun", 86], ["Rendyy", 78], ["Aran", 83], ["Banana", 79], ["Pendragon", 75], ["Saykots", 83], ["PAI", 82], ["Watt", 80], ["Edward", 81],
-    ["Joshua", 77], ["QINN", 81], ["MarceL", 75], ["Karss", 80], ["Oura", 98], ["Fluffy",83], ["Dyrenn", 82], ["Rippo", 80], ["Rinazmi", 78], ["Xorizo", 78]
+    ["Nino", 84], ["Shogun", 86], ["Rendyy", 78], ["Aran", 83], ["Banana", 79], ["Pendragon", 75], ["Saykots", 84], ["PAI", 82], ["Watt", 80], ["Edward", 81], ["Matt", 78], ["Revicii",76],
+    ["Joshua", 77], ["QINN", 81], ["MarceL", 75], ["Karss", 80], ["Oura", 98], ["Fluffy",83], ["Dyrenn", 84], ["Rippo", 80], ["Rinazmi", 78], ["Xorizo", 78], ["Qeira", 75]
   ],
   Roamer: [
     ["Donkey", 89], ["Kiboy", 91], ["LJ", 86], ["Psychoo", 87], ["Leomurphy", 83], ["Yawi", 82], ["Dreams", 83],["Fredo", 79], ["Marsha", 79], ["IOS", 79], ["Instinct", 82], ["Bajan", 80], ["Egatzy", 79],
