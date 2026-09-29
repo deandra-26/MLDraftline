@@ -16,27 +16,27 @@ const ROLE_STYLE = {
 const ALL_TIME_LEGENDS = {
   Jungler: [
     ["Alberttt", 93], ["Demonkite", 84], ["Kairi", 93], ["Nnael", 90], ["Sutsujin", 84], ["Reyy", 79], ["Rinee", 80], ["AyamJAGO", 80], ["Aether", 77], ["1rad", 80], ["Sugar", 77], ["Marlo", 79],
-    ["Oura", 84], ["Celiboy", 89], ["Kayn", 79], ["Kevin", 80], ["Tazz", 80], ["Super Kenn", 75], ["Kenn", 80], ["JessNoLimit", 86], ["High", 80], ["Woshipaul", 78], ["DoyokSyl", 75], ["Maykids", 80],
-    ["Nazara", 78], ["Affan", 80], ["Andoryuuu", 81], ["Rave", 80], ["Vincent", 79], ["Faviann", 83], ["Variety", 79], ["Yazuke", 81], ["Fearless", 74],["Gebe", 75], ["Joshua", 79], ["Ferxiic", 84], ["Van", 76]
+    ["Oura", 84], ["Celiboy", 89], ["Kayn", 79], ["Kevin", 80], ["Tazz", 80], ["Super Kenn", 75], ["Kenn", 80], ["JessNoLimit", 86], ["High", 80], ["Woshipaul", 78], ["MarceL", 78], ["Doyok", 75],
+    ["Nazara", 78], ["Affan", 80], ["Andoryuuu", 81], ["Rave", 80], ["Vincent", 79], ["Faviann", 83], ["Variety", 79], ["Yazuke", 81], ["Fearless", 74],["Gebe", 75], ["Joshua", 79], ["Ferxiic", 84]
   ],
   "Mid Laner": [
     ["SANZ", 92], ["DrianW", 72], ["Luminaire", 93], ["RINZ", 84], ["Yehezkiel", 86], ["Clayyy", 81], ["Swaylow", 79], ["Roundel", 78], ["Wannn", 90], ["Kido", 77],
     ["Jiizee", 81], ["Hajirin", 77], ["Dalvin", 83], ["Moreno", 87], ["Swaylow", 79], ["Facehugger", 83], ["Renbo", 80], ["Hijume", 84], ["Crish", 73], ["Emperor", 80], ["Cr1te", 77],
-    ["Octa", 80], ["Drichel", 80], ["Billy", 78], ["ABOY", 81], ["Udil", 88], ["Lemon", 95],["Ryzaa", 71], ["Rexxy", 76], ["Tezet", 74], ["Drian", 81], ["UK1R", 78], ["Treacky", 76]
+    ["Octa", 80], ["Drichel", 79], ["Billy", 78], ["ABOY", 81], ["Udil", 88], ["Lemon", 95],["Ryzaa", 71], ["Rexxy", 76], ["Tezet", 74], ["Drian", 81]
   ],
   "Gold Laner": [
-    ["CW", 90], ["REKT", 95], ["EMANN", 90], ["Erlan", 83], ["Branz", 85], ["Cadera", 83], ["Tuturu", 88], ["Clover", 79], ["BunnyQT", 73], ["Dee", 75], ["Savero", 87], ["Maungzy", 79], ["SuperToyy", 73], ["Kyou", 76],
-    ["Kelra", 89], ["Dingarai", 82], ["Watt", 83], ["Arthur", 77], ["Skylar", 91], ["Mattt", 76], ["Spade", 79], ["Nino", 81], ["Kabuki", 83], ["Marky", 80], ["Xyve", 80], ["Ahmad", 81], ["Aeronshiki", 84],
-    ["Keven", 83], ["Maybeee", 81], ["Zeonn", 79], ["KennzyySkie", 80], ["Xinnn", 89], ["Sasa", 85], ["Arfy", 84], ["Haizz", 77], ["Kuroky", 74], ["Taka", 78], ["Wizzking", 82], ["Revicii", 79]
+    ["CW", 90], ["REKT", 95], ["EMANN", 90], ["Erlan", 83], ["Branz", 85], ["Cadera", 83], ["Tuturu", 88], ["Clover", 79], ["BunnyQT", 73], ["Dee", 75],
+    ["Kelra", 89], ["Dingarai", 82], ["Watt", 83], ["Arthur", 77], ["Skylar", 91], ["Mattt", 76], ["Spade", 79], ["Nino", 80], ["Kabuki", 83], ["Marky", 80],
+    ["Keven", 83], ["Maybeee", 81], ["Zeonn", 79], ["KennzyySkie", 80], ["Xinnn", 89], ["Sasa", 85], ["Arfy", 84], ["Haizz", 77], ["Kuroky", 74]
   ],
   "Exp Laner": [
-    ["Antimage", 92], ["REKT", 80], ["Butss", 91], ["Lutpiii", 90], ["Rimitchi", 79],["Veldora", 78], ["Rezz", 75], ["Luke", 82], ["G", 79], ["R7", 95], ["Super Dann", 70],
-    ["Nino", 84], ["Shogun", 86], ["Rendyy", 78], ["Aran", 83], ["Banana", 79], ["Pendragon", 75], ["Saykots", 84], ["PAI", 82], ["Watt", 80], ["Edward", 81], ["Matt", 78], ["Revicii",76],
-    ["Joshua", 77], ["QINN", 81], ["MarceL", 75], ["Karss", 80], ["Oura", 98], ["Fluffy",83], ["Dyrenn", 84], ["Rippo", 80], ["Rinazmi", 78], ["Xorizo", 78], ["Qeira", 75]
+    ["Antimage", 92], ["REKT", 80], ["Butss", 91], ["Lutpiii", 90], ["Rimitchi", 79],["Veldora", 78], ["Rezz", 75], ["Luke", 82], ["G", 79], ["R7", 95],
+    ["Nino", 84], ["Shogun", 86], ["Rendyy", 78], ["Aran", 83], ["Banana", 79], ["Pendragon", 75], ["Saykots", 83], ["PAI", 82], ["Watt", 80], ["Edward", 81],
+    ["Joshua", 77], ["QINN", 81], ["MarceL", 76], ["Karss", 80], ["Oura", 98], ["Fluffy",83], ["Dyrenn", 82], ["Rippo", 80], ["Rinazmi", 78], ["Xorizo", 78]
   ],
   Roamer: [
-    ["Donkey", 89], ["Kiboy", 91], ["LJ", 86], ["Psychoo", 87], ["Leomurphy", 83], ["Yawi", 82], ["Dreams", 83],["Fredo", 79], ["Marsha", 79], ["IOS", 79], ["Instinct", 82], ["Bajan", 80], ["Egatzy", 79],
-    ["Finn", 85], ["Muezza", 80], ["Said", 78], ["Alexander", 84], ["Godiva", 82], ["Xwin", 74],["Rave", 82], ["Baloyskie", 84], ["widy", 81], ["Alek", 85], ["Drian", 90], ["Rasy", 80], ["Caesius", 74],
+    ["Donkey", 89], ["Kiboy", 91], ["LJ", 86], ["Psychoo", 87], ["Leomurphy", 83], ["Yawi", 82], ["Dreams", 83],["Fredo", 79], ["Marsha", 79], ["IOS", 79], ["Instinct", 82], ["Bajan", 80],
+    ["Finn", 85], ["Muezza", 80], ["Said", 78], ["Alexander", 84], ["Godiva", 82], ["Xwin", 74],["Rave", 82], ["Baloyskie", 84], ["widy", 81], ["Alek", 85], ["Drian", 90], ["Rasy", 80],
     ["Lyoni", 70], ["APHRO", 83], ["AudyTzy", 77], ["Itoshi Kesu", 81], ["REKT", 89], ["Naomi", 83], ["Brusko", 82], ["Liam", 84],["Owenn", 73], ["Shanee", 79], ["Darknesss", 74]
   ],
 };
@@ -98,8 +98,8 @@ function getMetaCounterModifier(myFormation, oppFormation) {
   const oppIdx = FORMATION_CYCLE.indexOf(oppFormation);
   if (idx === -1 || oppIdx === -1 || idx === oppIdx) return 0;
   const n = FORMATION_CYCLE.length;
-  if ((idx + 1) % n === oppIdx) return COUNTER_BONUS; // aku counter dia
-  if ((idx - 1 + n) % n === oppIdx) return -COUNTER_BONUS; // dia counter aku
+  if ((idx + 1) % n === oppIdx) return COUNTER_BONUS; 
+  if ((idx - 1 + n) % n === oppIdx) return -COUNTER_BONUS; 
   return 0;
 }
 
@@ -312,198 +312,6 @@ function RoleTag({ role }) {
     <span className="ldm-tag" style={{ color: s.accent, background: s.soft }}>
       {s.label}
     </span>
-  );
-}
-
-function FormationMapBoard({ starters, bench, assign, onAssignChange, injuries, formation, onSaveFormation, seasonNum }) {
-  const ZONES = ["Depan", "Tengah", "Belakang"];
-  const ZONE_LABELS = { Depan: "Atas", Tengah: "Tengah", Belakang: "Bawah" };
-  const OFF_ROLE_PENALTY = 10;
-  const roster = [...starters, ...bench];
-  const [selectedId, setSelectedId] = React.useState(null);
-
-  function getBadgeStyle(rating) {
-    return rating >= 90
-      ? { background: "#1a1a1a", color: "#f0c96a" }
-      : { background: "#e8ecf2", color: "#12213d" };
-  }
-
-  function placePlayerInRole(playerId, role) {
-    const player = roster.find((p) => p.id === playerId);
-    if (!player) return;
-    const starter = starters.find((s) => s.role === role);
-    if (player.id === starter?.id) {
-      onAssignChange((prev) => { const n = { ...prev }; delete n[role]; return n; });
-    } else {
-      onAssignChange((prev) => ({ ...prev, [role]: player.id }));
-    }
-    setSelectedId(null);
-  }
-
-  function toggleSelect(p) {
-    setSelectedId((prev) => (prev === p.id ? null : p.id));
-  }
-
-
-  const [lines, setLines] = React.useState(
-    () => ({ ...(FORMATIONS[formation]?.lines || FORMATIONS["1-3-1"].lines) })
-  );
-  React.useEffect(() => {
-    setLines({ ...(FORMATIONS[formation]?.lines || FORMATIONS["1-3-1"].lines) });
-  }, [formation]);
-
-  function activePlayerForRole(role) {
-    const assignedId = assign[role];
-    if (assignedId) return roster.find((p) => p.id === assignedId);
-    return starters.find((s) => s.role === role);
-  }
-  function isBenched(p) {
-    return !ROLES.some((r) => activePlayerForRole(r)?.id === p.id);
-  }
-
-  function handleZoneDrop(e, zone) {
-    e.preventDefault();
-    let data;
-    try { data = JSON.parse(e.dataTransfer.getData("text/plain") || "{}"); } catch { return; }
-    if (data.kind !== "role") return;
-    setLines((prev) => ({ ...prev, [data.role]: zone }));
-  }
-
-  function handleSlotDrop(e, role) {
-    e.preventDefault();
-    e.stopPropagation();
-    let data;
-    try { data = JSON.parse(e.dataTransfer.getData("text/plain") || "{}"); } catch { return; }
-    if (data.kind !== "player") return;
-    placePlayerInRole(data.id, role);
-  }
-
-  function clearSlot(role) {
-    onAssignChange((prev) => { const n = { ...prev }; delete n[role]; return n; });
-  }
-
-  function saveCustomFormation() {
-    const key = "Meta Custom";
-    FORMATIONS[key] = {
-      label: "Racikan Sendiri",
-      accent: "#A78BFA",
-      desc: "Formasi hasil racikan sendiri lewat map builder.",
-      lines: { ...lines },
-    };
-    if (!FORMATION_KEYS.includes(key)) FORMATION_KEYS.push(key);
-    onSaveFormation(key);
-  }
-
-  const injuredCount = roster.filter((p) => (injuries[p.id] || 0) > 0).length;
-
-  return (
-    <div style={{ background: "#0F1424", borderRadius: "14px", padding: "16px", border: "1px solid rgba(255,255,255,0.08)", marginBottom: "20px" }}>
-      <div className="ldm-squad-label" style={{ marginBottom: "10px" }}>Atur Skuad & Meta {seasonNum ? `(Musim ${seasonNum})` : ""}</div>
-      {injuredCount > 0 && (
-        <p style={{ fontSize: "11px", color: "#FB7185", marginTop: 0, marginBottom: "10px" }}>
-          🩹 Ada {injuredCount} pemain cedera — otomatis diganti pas main kalau ada opsi sehat.
-        </p>
-      )}
-      <div className="ldm-map-wrap">
-        <div className="ldm-map-board">
-          {ZONES.map((zone) => (
-            <div key={zone} className="ldm-map-zone" onDragOver={(e) => e.preventDefault()} onDrop={(e) => handleZoneDrop(e, zone)}>
-              <span className="ldm-map-zone-label">{ZONE_LABELS[zone].toUpperCase()}</span>
-              <div className="ldm-map-zone-slots">
-                {ROLES.filter((r) => (lines[r] || "Tengah") === zone).map((role) => {
-                  const s = ROLE_STYLE[role];
-                  const activePlayer = activePlayerForRole(role);
-                  const starter = starters.find((st) => st.role === role);
-                  const offRole = activePlayer && activePlayer.id !== starter?.id && activePlayer.role !== role;
-                  const effRating = activePlayer ? (offRole ? Math.max(40, activePlayer.rating - OFF_ROLE_PENALTY) : activePlayer.rating) : null;
-                  const injured = activePlayer && (injuries[activePlayer.id] || 0) > 0;
-                  return (
-                    <div
-                      key={role}
-                      className={`ldm-map-slot${selectedId ? " ldm-map-slot-target" : ""}`}
-                      style={{ borderColor: s.accent + "55" }}
-                      onDragOver={(e) => e.preventDefault()}
-                      onDrop={(e) => handleSlotDrop(e, role)}
-                      onClick={() => { if (selectedId) placePlayerInRole(selectedId, role); }}
-                      title={selectedId ? "Klik buat tempatin pemain terpilih di sini" : undefined}
-                    >
-                      <div
-                        className="ldm-map-slot-zonepick"
-                        draggable
-                        onDragStart={(e) => { e.stopPropagation(); e.dataTransfer.setData("text/plain", JSON.stringify({ kind: "role", role })); }}
-                        onClick={(e) => e.stopPropagation()}
-                      >
-                        {ZONES.map((z) => (
-                          <button
-                            key={z}
-                            type="button"
-                            className={`ldm-zone-btn${(lines[role] || "Tengah") === z ? " ldm-zone-btn-active" : ""}`}
-                            title={`Pindah ke ${ZONE_LABELS[z]}`}
-                            onClick={() => setLines((prev) => ({ ...prev, [role]: z }))}
-                          >
-                            {ZONE_LABELS[z][0]}
-                          </button>
-                        ))}
-                      </div>
-                      <div className="ldm-map-slot-dot" style={{ background: s.accent }}>{s.label[0]}</div>
-                      <div className="ldm-map-slot-role">{s.label}</div>
-                      <div className="ldm-map-slot-name">{activePlayer ? activePlayer.name : "—"}</div>
-                      {activePlayer && (
-                        <div style={{ fontSize: "10px", color: "#64748B" }}>
-                          {effRating} OVR{offRole ? ` (-${OFF_ROLE_PENALTY})` : ""}{injured ? " 🩹" : ""}
-                        </div>
-                      )}
-                      {assign[role] && (
-                        <button onClick={(e) => { e.stopPropagation(); clearSlot(role); }} className="ldm-map-slot-clear">kembalikan starter</button>
-                      )}
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className="ldm-bench-rail">
-          <div className="ldm-squad-label" style={{ marginBottom: "8px", fontSize: "11px" }}>
-            Pemain ({roster.length}) — {selectedId ? "klik role di map buat nempatin" : "klik pemain lalu klik role, atau geser ke map"}
-          </div>
-          <div className="ldm-pcard-grid">
-            {roster.map((p) => {
-              const benched = isBenched(p);
-              const injured = (injuries[p.id] || 0) > 0;
-              const selected = selectedId === p.id;
-              return (
-                <div
-                  key={p.id}
-                  className={`ldm-pcard ${benched ? "ldm-pcard-draggable" : "ldm-pcard-active"}${selected ? " ldm-pcard-selected" : ""}`}
-                  draggable={benched}
-                  onClick={() => { if (benched) toggleSelect(p); }}
-                  onDragStart={(e) => e.dataTransfer.setData("text/plain", JSON.stringify({ kind: "player", id: p.id }))}
-                >
-                  <div className="ldm-pcard-top">
-                    <div className="ldm-pcard-badge" style={getBadgeStyle(p.rating)}>{p.rating}</div>
-                    <div className="ldm-pcard-role" style={{ color: ROLE_STYLE[p.role].accent }}>{ROLE_STYLE[p.role].label}</div>
-                  </div>
-                  <div className="ldm-pcard-avatar" />
-                  <div className="ldm-pcard-bottom">
-                    <div className="ldm-pcard-name">{p.name}</div>
-                    <span className="ldm-pcard-tag" style={{ color: benched ? "#94A3B8" : "#34D399" }}>
-                      {benched ? (selected ? "TERPILIH" : "CADANGAN") : "MAIN"}
-                    </span>
-                    {injured && <span style={{ position: "absolute", right: 6, top: 4, fontSize: 12 }}>🩹</span>}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-
-      <button onClick={saveCustomFormation} className="ldm-reroll-btn" style={{ marginTop: "12px" }}>
-        Simpan sebagai Meta Custom & Pakai
-      </button>
-    </div>
   );
 }
 
@@ -728,7 +536,6 @@ const [activeSide, setActiveSide] = useState("A");
   const [careerMarket, setCareerMarket] = useState([]);
   const [careerSeasonSummary, setCareerSeasonSummary] = useState(null);
   const [viewingRosterTeam, setViewingRosterTeam] = useState(null);
-  const [aiMatchFormation, setAiMatchFormation] = useState(null);
 const [matchQueue, setMatchQueue] = useState([]);
 const [queueIndex, setQueueIndex] = useState(0);
 const [abContext, setAbContext] = useState("regular");
@@ -755,16 +562,6 @@ const [duelGameLog, setDuelGameLog] = useState([]);
       simTimersRef.current.forEach(clearTimeout);
     };
   }, []);
-
-  useEffect(() => {
-    if ((phase === "matchPrep" || phase === "playoffPrep") && seriesGameLog.length === 0){
-      const opp =
-      phase === "playoffPrep"
-        ?(pendingPlayoffMatch?.home?.isUser ? pendingPlayoffMatch.away : pendingPlayoffMatch?.home)
-        : getCurrentOpponent();
-        if (opp) setAiMatchFormation(getAiGameFormation(opp.formation));
-    }
-  }, [phase]);
 
 const TOTAL_LEGS = 2;
 const REGULAR_BEST_OF = 3;
@@ -1390,17 +1187,83 @@ function updateChemistryFor(side, squad, won) {
   }
 
   function renderCareerSquadManager() {
+    const injuredCount = userSquad.filter((p) => (careerInjuries[p.id] || 0) > 0).length
+      + careerBench.filter((p) => (careerInjuries[p.id] || 0) > 0).length;
     return (
-      <FormationMapBoard
-        starters={userSquad}
-        bench={careerBench}
-        assign={careerBenchAssign}
-        onAssignChange={setCareerBenchAssign}
-        injuries={careerInjuries}
-        formation={formation}
-        onSaveFormation={setFormation}
-        seasonNum={careerSeasonNum}
-      />
+      <div style={{ background: "#0F1424", borderRadius: "14px", padding: "16px", border: "1px solid rgba(255,255,255,0.08)", marginBottom: "20px" }}>
+        <div className="ldm-squad-label" style={{ marginBottom: "10px" }}>Atur Skuad (Musim {careerSeasonNum})</div>
+        {injuredCount > 0 && (
+          <p style={{ fontSize: "11px", color: "#FB7185", marginTop: 0, marginBottom: "10px" }}>
+            🤕 Ada {injuredCount} pemain cedera musim ini — otomatis diganti pas main kalau ada opsi sehat.
+          </p>
+        )}
+        <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+          {userSquad.map((starter) => {
+            const assignedId = careerBenchAssign[starter.role];
+            const starterInjured = (careerInjuries[starter.id] || 0) > 0;
+            return (
+              <div
+                key={starter.role}
+                style={{
+                  background: "#141A2E", borderRadius: "10px", padding: "8px 12px",
+                  border: `1px solid ${assignedId ? "rgba(52,211,153,0.3)" : "rgba(255,255,255,0.05)"}`,
+                }}
+              >
+                <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "8px", marginBottom: careerBench.length ? "6px" : 0 }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: "8px", minWidth: 0 }}>
+                    <RoleTag role={starter.role} />
+                    <span style={{ fontSize: "13px", color: "#E5E9F0", fontWeight: 500, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+                      {starter.name}
+                    </span>
+                    <span style={{ fontSize: "11px", color: "#64748B", flexShrink: 0 }}>{starter.rating} OVR</span>
+                    {starterInjured && <span style={{ fontSize: "10px", color: "#FB7185" }}>🤕 CEDERA {careerInjuries[starter.id]} match</span>}
+                  </div>
+                </div>
+                {careerBench.length > 0 && (
+                  <div style={{ display: "flex", gap: "6px", flexWrap: "wrap" }}>
+                    <button
+                      onClick={() => setCareerBenchAssign((prev) => { const n = { ...prev }; delete n[starter.role]; return n; })}
+                      className="ldm-reroll-btn"
+                      style={{
+                        color: !assignedId ? "#34D399" : "#94A3B8",
+                        background: !assignedId ? "rgba(52,211,153,0.1)" : "rgba(148,163,184,0.08)",
+                        borderColor: !assignedId ? "rgba(52,211,153,0.3)" : "rgba(148,163,184,0.2)",
+                      }}
+                    >
+                      Starter
+                    </button>
+                    {careerBench.map((b) => {
+                      const offRole = b.role !== starter.role;
+                      const effRating = offRole ? Math.max(40, b.rating - OFF_ROLE_PENALTY) : b.rating;
+                      const active = assignedId === b.id;
+                      const injured = (careerInjuries[b.id] || 0) > 0;
+                      return (
+                        <button
+                          key={b.id}
+                          onClick={() => setCareerBenchAssign((prev) => ({ ...prev, [starter.role]: b.id }))}
+                          className="ldm-reroll-btn"
+                          style={{
+                            color: active ? "#34D399" : "#94A3B8",
+                            background: active ? "rgba(52,211,153,0.1)" : "rgba(148,163,184,0.08)",
+                            borderColor: active ? "rgba(52,211,153,0.3)" : "rgba(148,163,184,0.2)",
+                          }}
+                        >
+                          {b.name} ({effRating}{offRole ? `, -${OFF_ROLE_PENALTY}` : ""}){injured ? " 🤕" : ""}
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+        {careerBench.length === 0 && (
+          <p style={{ fontSize: "11px", color: "#64748B", marginTop: "10px", marginBottom: 0 }}>
+            Kamu nggak punya pemain cadangan musim ini.
+          </p>
+        )}
+      </div>
     );
   }
 
@@ -1622,7 +1485,7 @@ function updateChemistryFor(side, squad, won) {
            const chemSide = gameMode === "liga1v1" ? activeSide : "A";
     const chemBefore = getChemistryFor(chemSide);
     const chemBonus = getChemistryBonus(chemBefore.streak);
-    const opponentForGame = { ...opponent, formation: aiMatchFormation || getAiGameFormation(opponent.formation) };
+    const opponentForGame = { ...opponent, formation: getAiGameFormation(opponent.formation) };
     const basePowerA = effectivePower(userTeam, opponentForGame) + chemBonus;
     const basePowerB = effectivePower(opponentForGame, userTeam);
     let userWinsGame = consumeSimOutcome(basePowerA, basePowerB);
@@ -1859,8 +1722,8 @@ function updateChemistryFor(side, squad, won) {
        const chemSide = gameMode === "liga1v1" ? activeSide : "A";
     const chemBefore = getChemistryFor(chemSide);
     const chemBonus = getChemistryBonus(chemBefore.streak);
-    const homeForGame = userIsHome ? home : { ...home, formation: aiMatchFormation || getAiGameFormation(home.formation) };
-    const awayForGame = userIsHome ? { ...away, formation: aiMatchFormation || getAiGameFormation(away.formation) } : away;
+    const homeForGame = userIsHome ? home : { ...home, formation: getAiGameFormation(home.formation) };
+    const awayForGame = userIsHome ? { ...away, formation: getAiGameFormation(away.formation) } : away;
     const basePowerHome = effectivePower(homeForGame, awayForGame) + (userIsHome ? chemBonus : 0);
     const basePowerAway = effectivePower(awayForGame, homeForGame) + (!userIsHome ? chemBonus : 0);
     let homeWinsGame = consumeSimOutcome(basePowerHome, basePowerAway);
@@ -1992,6 +1855,27 @@ function updateChemistryFor(side, squad, won) {
     setCareerMarket(careerMarket.filter((p) => p.id !== marketPlayer.id));
   }
 
+  function buyCareerPlayerReplacing(marketPlayer, replaceId) {
+    const oldPlayer = careerBench.find((b) => b.id === replaceId);
+    if (!oldPlayer) return;
+    const refund = Math.round(getPlayerPrice(oldPlayer.rating) * CAREER_SELL_FACTOR);
+    if (careerBudget + refund < marketPlayer.price) return;
+    setCareerBudget(careerBudget - marketPlayer.price + refund);
+    setCareerBench(
+      careerBench.map((b) =>
+        b.id === replaceId ? { id: marketPlayer.id, name: marketPlayer.name, role: marketPlayer.role, rating: marketPlayer.rating } : b
+      )
+    );
+    setCareerMarket(careerMarket.filter((p) => p.id !== marketPlayer.id));
+    setCareerBenchAssign((prev) => {
+      const next = { ...prev };
+      Object.keys(next).forEach((role) => {
+        if (next[role] === replaceId) next[role] = marketPlayer.id;
+      });
+      return next;
+    });
+  }
+
   function sellCareerPlayer(playerId, fromBench) {
     const rosterSize = userSquad.length + careerBench.length;
     if (rosterSize <= 5) return;
@@ -2071,7 +1955,7 @@ function updateChemistryFor(side, squad, won) {
         .ldm-container { width: 100%; max-width: 720px; }
         .ldm-header { margin-bottom: 24px; margin-top: 8px; }
         .ldm-header-row { display: flex; align-items: center; gap: 8px; }
-        .ldm-icon-box { display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; flex-shrink: 0; }
+        .ldm-icon-box { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 12px; background: rgba(251,191,36,0.14); flex-shrink: 0; }
         .ldm-title { font-family: 'Rajdhani', sans-serif; font-size: 30px; font-weight: 700; letter-spacing: 0.02em; color: #FFFFFF; margin: 0; }
         .ldm-subtitle-row { display: flex; align-items: center; gap: 8px; margin-top: 8px; margin-left: 4px; }
         .ldm-subtitle-bar { height: 4px; width: 40px; border-radius: 999px; background: #22D3EE; }
@@ -2102,37 +1986,6 @@ function updateChemistryFor(side, squad, won) {
         .ldm-draft-role { font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: 20px; letter-spacing: 0.02em; }
         .ldm-formation-note { font-size: 12px; color: #64748B; margin-bottom: 16px; }
         .ldm-reroll-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 600; color: #FBBF24; background: rgba(251,191,36,0.1); border: 1px solid rgba(251,191,36,0.3); padding: 5px 10px; border-radius: 999px; transition: filter .15s; }
-        .ldm-map-wrap { display: flex; gap: 16px; flex-wrap: wrap; }
-        .ldm-map-board { flex: 1; min-width: 260px; display: flex; flex-direction: column; gap: 10px; background: #0a1730; border-radius: 12px; padding: 12px; }
-        .ldm-map-zone { border: 1px dashed rgba(255,255,255,0.12); border-radius: 10px; padding: 10px; min-height: 74px; }
-        .ldm-map-zone-label { font-size: 10px; letter-spacing: 0.08em; color: #64748B; font-weight: 700; }
-        .ldm-map-zone-slots { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 6px; }
-        .ldm-map-slot { position: relative; width: 96px; border: 1.5px solid; border-radius: 10px; background: #12213d; padding: 8px 6px 6px; text-align: center; transition: transform .12s, box-shadow .12s, border-color .12s; }
-        .ldm-map-slot:hover { transform: translateY(-2px); }
-        .ldm-map-slot-target { cursor: pointer; border-color: #FBBF24 !important; box-shadow: 0 0 0 2px rgba(251,191,36,0.35); animation: ldm-pulse 1.1s ease-in-out infinite; }
-        .ldm-map-slot-zonepick { position: absolute; top: 3px; right: 3px; display: flex; gap: 2px; }
-        .ldm-zone-btn { width: 20px; height: 20px; border-radius: 5px; border: 1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.05); color: #7C8797; font-size: 10px; font-weight: 700; line-height: 1; cursor: pointer; padding: 0; touch-action: manipulation; }
-        .ldm-zone-btn-active { background: #FBBF24; border-color: #FBBF24; color: #12213d; }
-        @media (max-width: 480px) { .ldm-zone-btn { width: 24px; height: 24px; font-size: 11px; } }
-        @keyframes ldm-pulse { 0%, 100% { box-shadow: 0 0 0 2px rgba(251,191,36,0.35); } 50% { box-shadow: 0 0 0 4px rgba(251,191,36,0.15); } }
-        .ldm-map-slot-dot { width: 24px; height: 24px; border-radius: 50%; margin: 0 auto 4px; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; color: #0a1730; }
-        .ldm-map-slot-role { font-size: 9px; color: #7C8797; font-weight: 700; }
-        .ldm-map-slot-name { font-size: 12px; color: #E5E9F0; font-weight: 500; margin-top: 2px; }
-        .ldm-map-slot-clear { margin-top: 4px; font-size: 9px; color: #FBBF24; background: none; border: none; cursor: pointer; text-decoration: underline; padding: 0; }
-        .ldm-bench-rail { width: 240px; }
-        .ldm-pcard-grid { display: flex; flex-wrap: wrap; gap: 10px; }
-        .ldm-pcard { position: relative; width: 96px; border-radius: 12px; overflow: hidden; background: #12213d; box-shadow: 0 0 0 1px rgba(255,255,255,0.06); transition: transform .12s, box-shadow .12s; }
-        .ldm-pcard-draggable { cursor: pointer; }
-        .ldm-pcard-draggable:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 4px 12px rgba(0,0,0,0.35), 0 0 0 1px rgba(255,255,255,0.12); }
-        .ldm-pcard-selected { box-shadow: 0 0 0 2px #FBBF24, 0 4px 12px rgba(0,0,0,0.35) !important; transform: translateY(-3px) scale(1.03); }
-        .ldm-pcard-active { opacity: 0.55; cursor: default; }
-        .ldm-pcard-top { padding: 6px 6px 0; display: flex; justify-content: space-between; align-items: flex-start; }
-        .ldm-pcard-badge { width: 24px; height: 26px; background: #c9ced6; clip-path: polygon(0 0,100% 0,100% 70%,50% 100%,0 70%); display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color: #12213d; }
-        .ldm-pcard-role { font-size: 8px; font-weight: 700; letter-spacing: 0.05em; }
-        .ldm-pcard-avatar { width: 44px; height: 44px; border-radius: 50%; background: #1d3358; margin: 4px auto; }
-        .ldm-pcard-bottom { background: #0a1730; padding: 6px 4px 8px; text-align: center; }
-        .ldm-pcard-name { font-size: 10px; color: #fff; font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-        .ldm-pcard-tag { font-size: 8px; font-weight: 700; }
         .ldm-reroll-btn:hover:not(:disabled) { filter: brightness(1.2); }
         .ldm-sim-dot { width: 8px; height: 8px; border-radius: 50%; background: #FBBF24; display: inline-block; animation: ldm-sim-bounce 1s infinite ease-in-out; }
         .ldm-counter-badge { display: inline-block; margin-top: 4px; font-size: 9px; font-weight: 700; padding: 2px 6px; border-radius: 4px; letter-spacing: 0.02em; }
@@ -2183,24 +2036,16 @@ function updateChemistryFor(side, squad, won) {
         <header className="ldm-header">
           <div className="ldm-header-row">
             <div className="ldm-icon-box">
-              <img src={LOGO_DATA_URI} alt="Logo" style={{ width: "56px", height: "56px", objectFit: "contain" }} />
+              <img src={LOGO_DATA_URI} alt="Logo" style={{ width: "28px", height: "28px", objectFit: "contain" }} />
             </div>
-            <h1 className="ldm-title">ML DRAFTLINE</h1>
+            <h1 className="ldm-title">LIGA DRAFT ML</h1>
           </div>
           <div className="ldm-subtitle-row">
             <div className="ldm-subtitle-bar" />
             <span className="ldm-subtitle-text">ALL-STAR MPL ID S1-18</span>
-
-{phase ==="modeSelect" && (
-             <p style={{ marginTop: "10px", maxWidth:"520px", fontSize: "13px", fontWeight: 400, lineHeight: 1.6, color:"#94A3B8" }}>
-               Membuat dream team mpl id all time dan di bisa di mainkan melawan AI ataupun teman
-              Rating/OVR player bedasarkan prestasi dan lamanya player bermain di mpl id</p>
-)}
-                    
           </div>
         </header>
 
-        
         {phase === "simulating" && (
           <div className="ldm-card">
             <div className="ldm-draft-header">
@@ -2209,7 +2054,6 @@ function updateChemistryFor(side, squad, won) {
                 <span>MATCH BERLANGSUNG...</span>
               </div>
             </div>
-          
 
             <div style={{ textAlign: "center", marginBottom: "20px" }}>
               <span style={{ fontSize: "15px", fontWeight: 700, color: "#E5E9F0" }}>{simHomeName}</span>
@@ -2634,8 +2478,7 @@ function updateChemistryFor(side, squad, won) {
               dalam match Bo{REGULAR_BEST_OF} ini buat nyari strategi yang paling pas lawan tim ini.
             </p>
 
-            <ScoutingReport 
-            team={{...getCurrentOpponent(), formation: aiMatchFormation || getCurrentOpponent().formation}} onViewRoster={setViewingRosterTeam} />
+            <ScoutingReport team={getCurrentOpponent()} onViewRoster={setViewingRosterTeam} />
             {gameMode === "career" ? renderCareerSquadManager() : renderSquadManager()}
 
             {seriesGameLog.length > 0 && (
@@ -3229,13 +3072,8 @@ function updateChemistryFor(side, squad, won) {
               </strong>
             </div>
 
-<ScoutingReport
-  team={{
-    ...(pendingPlayoffMatch.home.isUser ? pendingPlayoffMatch.away : pendingPlayoffMatch.home),
-    formation: aiMatchFormation || (pendingPlayoffMatch.home.isUser ? pendingPlayoffMatch.away : pendingPlayoffMatch.home).formation,
-  }}
-  onViewRoster={setViewingRosterTeam}
-/>            {gameMode === "career" ? renderCareerSquadManager() : renderSquadManager()}
+            <ScoutingReport team={pendingPlayoffMatch.home.isUser ? pendingPlayoffMatch.away : pendingPlayoffMatch.home} onViewRoster={setViewingRosterTeam} />
+            {gameMode === "career" ? renderCareerSquadManager() : renderSquadManager()}
 
             {seriesGameLog.length > 0 && (
               <div style={{ marginBottom: "20px" }}>
@@ -3293,7 +3131,7 @@ function updateChemistryFor(side, squad, won) {
                       </span>
                       {(() => {
                         const oppTeam = pendingPlayoffMatch.home.isUser ? pendingPlayoffMatch.away : pendingPlayoffMatch.home;
-                        const mod = getMetaCounterModifier(key, aiMatchFormation || getCurrentOpponent().formation);
+                        const mod = getMetaCounterModifier(key, oppTeam.formation);
                         if (mod > 0) return <span className="ldm-counter-badge ldm-counter-good">▲ COUNTER</span>;
                         if (mod < 0) return <span className="ldm-counter-badge ldm-counter-bad">▼ LEMAH</span>;
                         return null;
@@ -3763,30 +3601,53 @@ function updateChemistryFor(side, squad, won) {
               </div>
 
               <div className="ldm-squad-label" style={{ marginBottom: "10px" }}>
-                Pemain Tersedia {careerBench.length >= 2 && <span style={{ color: "#FB7185", fontWeight: 400 }}>(bench penuh, jual dulu buat beli)</span>}
+                Pemain Tersedia {careerBench.length >= 2 && <span style={{ color: "#FBBF24", fontWeight: 400 }}>(bench penuh — beli buat gantiin cadangan)</span>}
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
                 {careerMarket.map((p) => {
-                  const canAfford = careerBudget >= p.price;
-                  const canBuy = canAfford && careerBench.length < 2;
+                  const benchFull = careerBench.length >= 2;
+                  const canAffordFresh = careerBudget >= p.price;
                   return (
-                    <div key={p.id} style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "8px", background: "#0F1424", borderRadius: "10px", padding: "8px 12px", border: "1px solid rgba(255,255,255,0.06)" }}>
+                    <div key={p.id} style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "8px", background: "#0F1424", borderRadius: "10px", padding: "8px 12px", border: "1px solid rgba(255,255,255,0.06)", flexWrap: "wrap" }}>
                       <div style={{ display: "flex", alignItems: "center", gap: "8px", minWidth: 0 }}>
                         <RoleTag role={p.role} />
                         <span style={{ fontSize: "13px", color: "#E5E9F0" }}>{p.name}</span>
                         <span style={{ fontSize: "11px", color: "#64748B" }}>{p.rating} OVR</span>
                       </div>
-                      <button
-                        onClick={() => buyCareerPlayer(p)}
-                        disabled={!canBuy}
-                        className="ldm-reroll-btn"
-                        style={{
-                          opacity: canBuy ? 1 : 0.4, cursor: canBuy ? "pointer" : "not-allowed",
-                          color: "#34D399", background: "rgba(52,211,153,0.1)", borderColor: "rgba(52,211,153,0.3)",
-                        }}
-                      >
-                        Beli ({formatRupiah(p.price)})
-                      </button>
+                      {!benchFull ? (
+                        <button
+                          onClick={() => buyCareerPlayer(p)}
+                          disabled={!canAffordFresh}
+                          className="ldm-reroll-btn"
+                          style={{
+                            opacity: canAffordFresh ? 1 : 0.4, cursor: canAffordFresh ? "pointer" : "not-allowed",
+                            color: "#34D399", background: "rgba(52,211,153,0.1)", borderColor: "rgba(52,211,153,0.3)",
+                          }}
+                        >
+                          Beli ({formatRupiah(p.price)})
+                        </button>
+                      ) : (
+                        <div style={{ display: "flex", gap: "6px", flexWrap: "wrap" }}>
+                          {careerBench.map((b) => {
+                            const refund = Math.round(getPlayerPrice(b.rating) * CAREER_SELL_FACTOR);
+                            const canAffordSwap = careerBudget + refund >= p.price;
+                            return (
+                              <button
+                                key={b.id}
+                                onClick={() => buyCareerPlayerReplacing(p, b.id)}
+                                disabled={!canAffordSwap}
+                                className="ldm-reroll-btn"
+                                style={{
+                                  opacity: canAffordSwap ? 1 : 0.4, cursor: canAffordSwap ? "pointer" : "not-allowed",
+                                  color: "#34D399", background: "rgba(52,211,153,0.1)", borderColor: "rgba(52,211,153,0.3)",
+                                }}
+                              >
+                                Ganti {b.name} ({formatRupiah(p.price)} − {formatRupiah(refund)})
+                              </button>
+                            );
+                          })}
+                        </div>
+                      )}
                     </div>
                   );
                 })}
