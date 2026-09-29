@@ -762,7 +762,7 @@ const [duelGameLog, setDuelGameLog] = useState([]);
       phase === "playoffPrep"
         ?(pendingPlayoffMatch?.home?.isUser ? pendingPlayoffMatch.away : pendingPlayoffMatch?.home)
         : getCurrentOpponent();
-        if (oop) setAiMatchFormation(getAiGameFormation(oop.formation));
+        if (opp) setAiMatchFormation(getAiGameFormation(oop.formation));
     }
   }, [phase]);
 
