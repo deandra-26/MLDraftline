@@ -98,8 +98,8 @@ function getMetaCounterModifier(myFormation, oppFormation) {
   const oppIdx = FORMATION_CYCLE.indexOf(oppFormation);
   if (idx === -1 || oppIdx === -1 || idx === oppIdx) return 0;
   const n = FORMATION_CYCLE.length;
-  if ((idx + 1) % n === oppIdx) return COUNTER_BONUS; 
-  if ((idx - 1 + n) % n === oppIdx) return -COUNTER_BONUS; 
+  if ((idx + 1) % n === oppIdx) return COUNTER_BONUS; // aku counter dia
+  if ((idx - 1 + n) % n === oppIdx) return -COUNTER_BONUS; // dia counter aku
   return 0;
 }
 
@@ -113,7 +113,7 @@ function getCounterInfo(formation) {
   };
 }
 
-const CAREER_STARTING_BUDGET = 300000000;
+const CAREER_STARTING_BUDGET = 500000000;
 const CAREER_INJURY_CHANCE = 0.05;
 const CAREER_INJURY_MIN_MATCHES = 1;
 const CAREER_INJURY_MAX_MATCHES = 3;
@@ -687,6 +687,22 @@ const REGULAR_BEST_OF = 3;
     const newPool = removeFromPool(pool, player.role, player.id);
     setPool(newPool);
 
+    if (gameMode === "career") {
+      setCareerBudget(careerBudget - getPlayerPrice(player.rating));
+      const newSquad = [...userSquad, player];
+      setUserSquad(newSquad);
+      if (roleIndex + 1 < ROLES.length) {
+        const nextRole = ROLES[roleIndex + 1];
+        setCandidates(drawCandidates(newPool, nextRole));
+        setRoleIndex(roleIndex + 1);
+      } else {
+        setSubRerollsLeft(2);
+        setCandidates(drawSubCandidates(newPool));
+        setPhase("draftSub");
+      }
+      return;
+    }
+
     if (gameMode === "liga1v1" || gameMode === "direct1v1") {
       if (draftingTeam === "A") {
         setUserSquad((prev) => [...prev, player]);
@@ -750,7 +766,6 @@ const REGULAR_BEST_OF = 3;
   function finalizeCareerDraft(basePool, bench) {
     setCareerBench(bench);
     setCareerBenchAssign({});
-    setCareerBudget(CAREER_STARTING_BUDGET);
     setCareerSeasonNum(1);
     setCareerDynastyLog([]);
     setCareerStats({});
@@ -765,6 +780,7 @@ const REGULAR_BEST_OF = 3;
     setPool(newPool);
 
     if (gameMode === "career") {
+      setCareerBudget(careerBudget - getPlayerPrice(player.rating));
       const newBench = [...careerBench, player];
       if (newBench.length < 2) {
         setSubRerollsLeft(2);
@@ -2122,8 +2138,9 @@ function updateChemistryFor(side, squad, won) {
                 <div style={{ textAlign: "left" }}>
                   <div className="ldm-formation-key" style={{ color: "#34D399" }}>MODE KARIR</div>
                   <div className="ldm-formation-desc">
-                    Jadi manajer dinasti multi-musim: skuad kepake terus musim demi musim, pemain naik/turun rating
-                    sesuai performa, ada 2 pemain cadangan, cedera, gaji, dan transfer market pake Rupiah.
+                    Jadi manajer dinasti multi-musim: mulai dengan budget Rupiah buat BELANJA skuad awal (bukan draft gratis),
+                    skuad kepake terus musim demi musim, pemain naik/turun rating & harga sesuai performa, ada 2 pemain
+                    cadangan, cedera, gaji, dan transfer market.
                   </div>
                 </div>
               </button>
@@ -2139,9 +2156,18 @@ function updateChemistryFor(side, squad, won) {
               </div>
             )}
             <p className="ldm-text">
-
-               Menjadi coach tim MPL ID dengan draft 5 pemain (Jungler, Mid, Gold, Exp, Roamer) satu per satu dari player acak yang pernah
-              Bermain di MPL ID S1-S18
+              {gameMode === "career" ? (
+                <>
+                  Jadi manajer tim MPL ID: kamu dapet budget {formatRupiah(CAREER_STARTING_BUDGET)} buat BELANJA 5 starter
+                  (Jungler, Mid, Gold, Exp, Roamer) dari player acak yang pernah main di MPL ID S1-S18 — makin tinggi rating,
+                  makin mahal harganya. Atur duitnya baik-baik!
+                </>
+              ) : (
+                <>
+                  Menjadi coach tim MPL ID dengan draft 5 pemain (Jungler, Mid, Gold, Exp, Roamer) satu per satu dari player acak yang pernah
+                  Bermain di MPL ID S1-S18
+                </>
+              )}
             </p>
 
             <label className="ldm-label">{(gameMode === "liga1v1" || gameMode === "direct1v1") ? "Nama Tim A (kamu)" : "Nama timmu"}</label>
@@ -2246,6 +2272,12 @@ function updateChemistryFor(side, squad, won) {
 
         {phase === "draft" && (
           <div className="ldm-card">
+            {gameMode === "career" && (
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", fontSize: "12px", fontWeight: 700, marginBottom: "10px" }}>
+                <span style={{ color: "#34D399", textTransform: "uppercase", letterSpacing: "0.03em" }}>Belanja Skuad Awal</span>
+                <span style={{ color: careerBudget < 0 ? "#FB7185" : "#FBBF24" }}>{formatRupiah(careerBudget)}</span>
+              </div>
+            )}
             {(gameMode === "liga1v1" || gameMode === "direct1v1") && (
               <div style={{ fontSize: "12px", color: draftingTeam === "A" ? "#8B5CF6" : "#22D3EE", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.03em", marginBottom: "10px" }}>
                 Giliran {draftingTeam === "A" ? (userTeamName.trim() || "Tim A") : (teamBName.trim() || "Tim B")} milih pemain
@@ -2277,18 +2309,25 @@ function updateChemistryFor(side, squad, won) {
             <div className="ldm-player-grid">
               {candidates.map((p) => {
                 const s = ROLE_STYLE[p.role];
+                const price = gameMode === "career" ? getPlayerPrice(p.rating) : null;
+                const tooExpensive = price !== null && price > careerBudget;
                 return (
                   <button
                     key={p.id}
                     onClick={() => pickPlayer(p)}
                     className="ldm-player-btn"
-                    style={{ borderColor: s.accent + "66" }}
+                    style={{ borderColor: tooExpensive ? "#FB7185" : s.accent + "66" }}
                   >
                     <RoleTag role={p.role} />
                     <div className="ldm-player-name">{p.name}</div>
                     <div className="ldm-player-rating">
                       <Star className="w-5 h-5" /> {p.rating} OVR
                     </div>
+                    {price !== null && (
+                      <div style={{ fontSize: "11px", fontWeight: 700, marginTop: "4px", color: tooExpensive ? "#FB7185" : "#34D399" }}>
+                        {formatRupiah(price)}
+                      </div>
+                    )}
                   </button>
                 );
               })}
@@ -2329,8 +2368,11 @@ function updateChemistryFor(side, squad, won) {
         {phase === "draftSub" && (
           <div className="ldm-card">
             {gameMode === "career" && (
-              <div style={{ fontSize: "12px", color: "#34D399", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.03em", marginBottom: "10px" }}>
-                Pemain Cadangan {careerBench.length + 1} dari 2
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", fontSize: "12px", fontWeight: 700, marginBottom: "10px" }}>
+                <span style={{ color: "#34D399", textTransform: "uppercase", letterSpacing: "0.03em" }}>
+                  Pemain Cadangan {careerBench.length + 1} dari 2 (opsional)
+                </span>
+                <span style={{ color: careerBudget < 0 ? "#FB7185" : "#FBBF24" }}>{formatRupiah(careerBudget)}</span>
               </div>
             )}
             {(gameMode === "liga1v1" || gameMode === "direct1v1") && (
@@ -2375,18 +2417,25 @@ function updateChemistryFor(side, squad, won) {
             <div className="ldm-player-grid">
               {candidates.map((p) => {
                 const s = ROLE_STYLE[p.role];
+                const price = gameMode === "career" ? getPlayerPrice(p.rating) : null;
+                const tooExpensive = price !== null && price > careerBudget;
                 return (
                   <button
                     key={p.id}
                     onClick={() => pickSubPlayer(p)}
                     className="ldm-player-btn"
-                    style={{ borderColor: s.accent + "66" }}
+                    style={{ borderColor: tooExpensive ? "#FB7185" : s.accent + "66" }}
                   >
                     <RoleTag role={p.role} />
                     <div className="ldm-player-name">{p.name}</div>
                     <div className="ldm-player-rating">
                       <Star className="w-5 h-5" /> {p.rating} OVR
                     </div>
+                    {price !== null && (
+                      <div style={{ fontSize: "11px", fontWeight: 700, marginTop: "4px", color: tooExpensive ? "#FB7185" : "#34D399" }}>
+                        {formatRupiah(price)}
+                      </div>
+                    )}
                   </button>
                 );
               })}
